@@ -1,0 +1,40 @@
+# Dependencies
+**/vendor/
+**/node_modules/
+
+# Environment files
+**/.env
+**/.env.backup
+**/.env.production
+**/.env.local
+
+# Storage and uploads
+backend/storage/*.key
+backend/storage/app/imports/*
+backend/storage/app/failures/*
+backend/storage/testing/*
+storage/testing/*
+*.csv
+
+# Exceptions: keep .gitkeep in storage directories
+!backend/storage/app/.gitkeep
+!backend/storage/app/public/.gitkeep
+!backend/storage/logs/.gitkeep
+!backend/storage/testing/.gitkeep
+
+# IDE and OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build outputs
+frontend/dist/
+backend/public/build/
+backend/public/hot
+
+# Testing and coverage
+backend/.phpunit.result.cache
+backend/coverage/
